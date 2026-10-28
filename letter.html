@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#fbf6f1">
+    <meta name="description" content="A little love letter for our first anniversary.">
+    <title>Your Letter — One Year of Us</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="letter.js" defer></script>
+</head>
+<body class="letter-page">
+    <header class="site-header">
+        <a class="wordmark" href="index.html#home" aria-label="Back to One Year of Us"><span class="wordmark-heart" aria-hidden="true">♥</span> our little story</a>
+        <a class="header-link" href="index.html#home">Back to our story <span aria-hidden="true">↗</span></a>
+    </header>
+
+    <main class="letter-page-main">
+        <section class="letter-page-content" aria-labelledby="special-letter-title">
+            <p class="eyebrow"><span class="eyebrow-line"></span> Sealed with all my love <span class="eyebrow-line"></span></p>
+            <h1 class="letter-page-title" id="special-letter-title">A little something <em>just for you.</em></h1>
+            <p class="letter-page-intro" id="letter-page-intro">Some things are better said from the heart. I saved you a note.</p>
+
+            <div class="letter-scene" id="letter-scene">
+                <article class="letter-sheet" id="letter-sheet" aria-hidden="true">
+                    <p class="letter-greeting">My favorite person,</p>
+                    <p>Happy first anniversary, my love PYARI CHUDAIL.</p>
+                    <p>This year gave me so many little moments to keep: the laughter, the adventures, the comfortable quiet, and the way you make an ordinary day feel special just by being in it.</p>
+                    <p>Thank you for being my favorite hello, my safest place, and the person I want beside me for everything still to come.</p>
+                    <p>My favorite part of this year was you. My favorite part of every next year will be you, too.</p>
+                    <p class="letter-signoff">All my love, always <span aria-hidden="true">♥</span></p>
+                </article>
+
+                <button class="letter-envelope-button" id="open-special-letter" type="button" aria-expanded="false" aria-controls="letter-sheet" aria-label="Open your one unread letter">
+                    <span class="envelope-art" aria-hidden="true">
+                        <span class="envelope-front"></span>
+                        <span class="envelope-flap"></span>
+                        <span class="envelope-seal">♥</span>
+                    </span>
+                    <span class="envelope-prompt" id="envelope-prompt">You have 1 unread letter 💌</span>
+                </button>
+            </div>
+            <button class="celebrate-trigger" id="celebrate-anniversary" type="button">Celebrate our year <span aria-hidden="true">🎉</span></button>
+            <button class="final-surprise-trigger" id="open-final-surprise" type="button">One Last Surprise… <span aria-hidden="true">🎁</span></button>
+            <p class="visually-hidden" id="letter-open-status" role="status" aria-live="polite"></p>
+        </section>
+    </main>
+
+    <footer class="site-footer letter-page-footer">
+        <span>Made with a whole lot of love <span aria-hidden="true">♡</span>Ranjan Rana </span>
+    </footer>
+
+    <section class="celebration-screen" id="celebration-screen" role="dialog" aria-modal="true" aria-labelledby="celebration-title" aria-describedby="celebration-subtitle" hidden>
+        <div class="celebration-firework firework-one" aria-hidden="true"></div>
+        <div class="celebration-firework firework-two" aria-hidden="true"></div>
+        <div class="celebration-firework firework-three" aria-hidden="true"></div>
+        <div class="celebration-confetti" aria-hidden="true">
+            <span></span><span></span><span></span><span></span><span></span><span></span>
+            <span></span><span></span><span></span><span></span><span></span><span></span>
+            <span></span><span></span><span></span><span></span><span></span><span></span>
+        </div>
+        <div class="celebration-hearts" aria-hidden="true">
+            <span>♥</span><span>♡</span><span>♥</span><span>♡</span><span>♥</span>
+            <span>♡</span><span>♥</span><span>♡</span><span>♥</span><span>♡</span>
+        </div>
+        <div class="celebration-content">
+            <p class="celebration-kicker">Our first beautiful year</p>
+            <h2 id="celebration-title">Happy 1st<br>Anniversary <span aria-hidden="true">❤️</span></h2>
+            <p class="celebration-count"><span id="celebration-day-count">0</span><br><span>Days Together</span></p>
+            <p class="celebration-subtitle" id="celebration-subtitle">365 days of memories, laughter, and choosing each other.<br>And I would choose you all over again.</p>
+            <button class="celebration-close" id="close-celebration" type="button">Back to our letter <span aria-hidden="true">♥</span></button>
+        </div>
+    </section>
+
+    <dialog class="final-surprise-dialog" id="final-surprise" aria-labelledby="final-surprise-title" aria-describedby="final-surprise-message">
+        <button class="final-surprise-close" id="close-final-surprise" type="button" aria-label="Close the surprise">×</button>
+        <div class="final-surprise-visuals" aria-hidden="true">
+            <div class="celebration-firework firework-one"></div>
+            <div class="celebration-firework firework-two"></div>
+            <div class="celebration-firework firework-three"></div>
+            <div class="celebration-confetti final-surprise-confetti">
+                <span></span><span></span><span></span><span></span>
+                <span></span><span></span><span></span><span></span>
+            </div>
+            <div class="celebration-hearts final-surprise-hearts">
+                <span>♥</span><span>♡</span><span>♥</span><span>♡</span>
+            </div>
+        </div>
+        <span class="final-surprise-heart" aria-hidden="true">♥</span>
+        <p class="celebration-kicker">One last little thing</p>
+        <p class="final-surprise-line final-surprise-line-top" id="final-surprise-line-one">One year down…</p>
+        <p class="final-surprise-line final-surprise-line-bottom" id="final-surprise-line-two">…and I still choose you. ❤️</p>
+        <h2 id="final-surprise-title">HAPPY 1ST<br>ANNIVERSARY</h2>
+        <p class="final-surprise-couple" id="final-surprise-message">Ranjan Rana × Muskan Rana</p>
+        <p class="final-surprise-love" id="final-surprise-love">100% Love</p>
+        <span class="final-surprise-sparkle sparkle-left" aria-hidden="true">✦</span>
+        <span class="final-surprise-sparkle sparkle-right" aria-hidden="true">✧</span>
+    </dialog>
+</body>
+</html>

@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#fbf5f0">
+    <meta name="description" content="A little celebration of one beautiful year together.">
+    <title>One Year of Us</title>
+    <script>
+        const introComplete = new URLSearchParams(window.location.search).has("introComplete");
+
+        if (introComplete) {
+            try {
+                window.history.replaceState(null, "", window.location.pathname + window.location.hash);
+            } catch (error) {
+                // The intro query is harmless if this browser disallows history updates.
+            }
+        } else {
+            window.location.replace("intro.html");
+        }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <section class="opening-screen" id="opening-screen" aria-labelledby="opening-title">
+        <span class="floating-heart heart-one" aria-hidden="true">♥</span>
+        <span class="floating-heart heart-two" aria-hidden="true">♡</span>
+        <span class="floating-heart heart-three" aria-hidden="true">♥</span>
+        <span class="floating-heart heart-four" aria-hidden="true">♡</span>
+        <span class="floating-sparkle sparkle-five" aria-hidden="true">✦</span>
+        <span class="floating-sparkle sparkle-six" aria-hidden="true">✧</span>
+        <div class="opening-content">
+            <p class="opening-eyebrow"><span aria-hidden="true">✦</span> A little celebration of us <span aria-hidden="true">✦</span></p>
+            <h1 id="opening-title"><span class="visually-hidden">One Year, One Beautiful Story ❤️</span><span class="typewriter-text" id="typewriter-text" aria-hidden="true"></span><span class="typewriter-cursor" aria-hidden="true"></span></h1>
+            <p class="opening-subtitle">365 days of laughter, love, and choosing each other.</p>
+            <div class="anniversary-countdown">
+                <label for="anniversary-date">Our anniversary date</label>
+                <input id="anniversary-date" type="date" aria-describedby="countdown-message">
+                <p class="countdown-message" id="countdown-message" role="status" aria-live="polite">Choose our special date to start the countdown.</p>
+                <div class="countdown-units" aria-label="Time until our anniversary">
+                    <div class="countdown-unit"><span id="countdown-days">--</span><small>days</small></div>
+                    <div class="countdown-unit"><span id="countdown-hours">--</span><small>hours</small></div>
+                    <div class="countdown-unit"><span id="countdown-minutes">--</span><small>minutes</small></div>
+                    <div class="countdown-unit"><span id="countdown-seconds">--</span><small>seconds</small></div>
+                </div>
+            </div>
+            <button class="journey-button" id="start-journey" type="button">Start Our Journey <span aria-hidden="true">💌</span></button>
+            <p class="opening-footnote">made with all my love <span aria-hidden="true">♡</span></p>
+        </div>
+    </section>
+
+    <header class="site-header">
+        <a class="wordmark" href="#home" aria-label="One Year of Us home"><span class="wordmark-heart" aria-hidden="true">♥</span> our little story</a>
+        <a class="header-link reasons-nav-link" href="#reasons">Reasons I love you <span aria-hidden="true">♥</span></a>
+        <a class="header-link" href="letter.html">A note for you <span aria-hidden="true">↗</span></a>
+    </header>
+
+    <main>
+        <section class="hero welcome-hero" id="home" aria-labelledby="hero-title">
+            <span class="hero-particle particle-one" aria-hidden="true"></span>
+            <span class="hero-particle particle-two" aria-hidden="true"></span>
+            <span class="hero-particle particle-three" aria-hidden="true"></span>
+            <span class="hero-particle particle-four" aria-hidden="true"></span>
+            <span class="hero-particle particle-five" aria-hidden="true"></span>
+            <span class="hero-particle particle-six" aria-hidden="true"></span>
+            <span class="hero-particle particle-seven" aria-hidden="true"></span>
+            <span class="hero-particle particle-eight" aria-hidden="true"></span>
+            <div class="hero-copy">
+                <p class="eyebrow"><span class="eyebrow-line"></span> Our first chapter</p>
+                <h1 id="hero-title">365 days of <em>memories,</em><br>laughter and<br>togetherness<span class="hero-heart" aria-hidden="true"> ♥</span></h1>
+                <p class="hero-description">A year of little moments, big laughs, and making a beautiful life together. And this is only the beginning.</p>
+                <a class="button button-primary" href="#journey">Explore our journey <span aria-hidden="true">↓</span></a>
+                <p class="hero-date"><span aria-hidden="true">✳</span> Our first anniversary <span aria-hidden="true">✳</span></p>
+            </div>
+            <div class="hero-art" aria-label="A sunny, dreamy picture of a couple together">
+                <div class="hero-photo" role="img" aria-label="A couple sharing a warm, loving moment together"></div>
+                <div class="photo-sticker"><span aria-hidden="true">♥</span><br>my person,<br>always</div>
+                <span class="hero-sparkle sparkle-one" aria-hidden="true">✳</span>
+                <span class="hero-sparkle sparkle-two" aria-hidden="true">✦</span>
+                <p class="photo-caption">the beginning of everything</p>
+            </div>
+            <span class="hero-decoration" aria-hidden="true">01</span>
+        </section>
+
+        <section class="year-counter section-wrap" id="one-year" aria-labelledby="year-counter-title">
+            <div class="year-counter-content">
+                <div class="section-heading">
+                    <p class="eyebrow"><span class="eyebrow-line"></span> Every moment matters</p>
+                    <h2 id="year-counter-title">One year, <em>a thousand ways to love you.</em></h2>
+                    <p class="section-intro">365 days together—and every second is a favorite.</p>
+                </div>
+                <div class="year-counter-grid">
+                    <article class="year-counter-card" aria-label="365 days">
+                        <span class="year-counter-value" data-count="365" aria-hidden="true">365</span>
+                        <span class="year-counter-label">Days</span>
+                    </article>
+                    <article class="year-counter-card" aria-label="8,760 hours">
+                        <span class="year-counter-value" data-count="8760" aria-hidden="true">8,760</span>
+                        <span class="year-counter-label">Hours</span>
+                    </article>
+                    <article class="year-counter-card" aria-label="525,600 minutes">
+                        <span class="year-counter-value" data-count="525600" aria-hidden="true">525,600</span>
+                        <span class="year-counter-label">Minutes</span>
+                    </article>
+                    <article class="year-counter-card" aria-label="31,536,000 seconds">
+                        <span class="year-counter-value" data-count="31536000" aria-hidden="true">31,536,000</span>
+                        <span class="year-counter-label">Seconds</span>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="journey-timeline section-wrap" id="journey" aria-labelledby="journey-title">
+            <div class="section-heading">
+                <p class="eyebrow"><span class="eyebrow-line"></span> Our journey</p>
+                <h2 id="journey-title">Little moments, <em>one beautiful story.</em></h2>
+                <p class="section-intro">From that very first hello to every little thing that brought us here.</p>
+            </div>
+            <ol class="timeline-list">
+                <li class="timeline-item">
+                    <span class="timeline-marker" aria-hidden="true">01</span>
+                    <article class="timeline-card">
+                        <div class="timeline-photo timeline-photo-meet" role="img" aria-label="A couple meeting for a first date"></div>
+                        <div class="timeline-copy">
+                            <p class="timeline-date">Add your date</p>
+                            <h3>First meet</h3>
+                            <p>The day our story began—with a hello, a smile, and a little bit of magic.</p>
+                        </div>
+                    </article>
+                </li>
+                <li class="timeline-item">
+                    <span class="timeline-marker" aria-hidden="true">02</span>
+                    <article class="timeline-card">
+                        <div class="timeline-photo timeline-photo-photo" role="img" aria-label="A couple taking their first photo together"></div>
+                        <div class="timeline-copy">
+                            <p class="timeline-date">Add your date</p>
+                            <h3>First photo</h3>
+                            <p>Our first little snapshot together—and the start of a camera roll full of us.</p>
+                        </div>
+                    </article>
+                </li>
+                <li class="timeline-item">
+                    <span class="timeline-marker" aria-hidden="true">03</span>
+                    <article class="timeline-card">
+                        <div class="timeline-photo timeline-photo-moment" role="img" aria-label="A sweet and special moment shared together"></div>
+                        <div class="timeline-copy">
+                            <p class="timeline-date">Add your date</p>
+                            <h3>A special moment</h3>
+                            <p>One of those little memories that still makes me smile whenever I think of it.</p>
+                        </div>
+                    </article>
+                </li>
+                <li class="timeline-item">
+                    <span class="timeline-marker" aria-hidden="true">04</span>
+                    <article class="timeline-card">
+                        <div class="timeline-photo timeline-photo-trip" role="img" aria-label="A scenic getaway surrounded by mountains"></div>
+                        <div class="timeline-copy">
+                            <p class="timeline-date">Add your date</p>
+                            <h3>Our first trip</h3>
+                            <p>A new place, a shared adventure, and my favorite travel companion.</p>
+                        </div>
+                    </article>
+                </li>
+                <li class="timeline-item">
+                    <span class="timeline-marker" aria-hidden="true">05</span>
+                    <article class="timeline-card">
+                        <div class="timeline-photo timeline-photo-six" role="img" aria-label="A warm celebration of six months together"></div>
+                        <div class="timeline-copy">
+                            <p class="timeline-date">29</p>
+                            <h3>Six months</h3>
+                            <p>Half a year of being us—and somehow falling for you more every day.</p>
+                        </div>
+                    </article>
+                </li>
+                <li class="timeline-item">
+                    <span class="timeline-marker timeline-marker-today" aria-hidden="true">♥</span>
+                    <article class="timeline-card">
+                        <div class="timeline-photo timeline-photo-today" role="img" aria-label="A couple celebrating a year of love and togetherness"></div>
+                        <div class="timeline-copy">
+                            <p class="timeline-date">Today</p>
+                            <h3>One year of us</h3>
+                            <p>365 days of memories, laughter, and togetherness. Here's to everything still to come.</p>
+                        </div>
+                    </article>
+                </li>
+            </ol>
+        </section>
+
+        <section class="story section-wrap" id="our-story" aria-labelledby="story-title">
+            <div class="section-heading">
+                <p class="eyebrow"><span class="eyebrow-line"></span> The little things</p>
+                <h2 id="story-title">A year in <em>favorite moments.</em></h2>
+                <p class="section-intro">No grand timeline needed. Just a few little snapshots from our very favorite year.</p>
+            </div>
+            <div class="memory-grid">
+                <article class="memory-card memory-first">
+                    <div class="memory-image image-first" role="img" aria-label="A little table set for a special first date"></div>
+                    <div class="memory-caption"><span class="memory-number">01 / THE BEGINNING</span><h3>That first hello</h3><p>Butterflies, big smiles, and secretly hoping the evening would never end.</p></div>
+                </article>
+                <article class="memory-card memory-middle">
+                    <div class="memory-image image-middle" role="img" aria-label="A sunny little getaway in the mountains"></div>
+                    <div class="memory-caption"><span class="memory-number">02 / SOMEWHERE NEW</span><h3>Our kind of adventure</h3><p>New places are lovely. Getting to see them with you is even better.</p></div>
+                </article>
+                <article class="memory-card memory-last">
+                    <div class="memory-image image-last" role="img" aria-label="A cozy, candlelit dinner for two"></div>
+                    <div class="memory-caption"><span class="memory-number">03 / RIGHT HERE</span><h3>The everyday magic</h3><p>The quiet, ordinary days with you have a way of becoming my favorite.</p></div>
+                </article>
+            </div>
+            <div class="story-note"><span aria-hidden="true">✳</span> Turns out, home can be a person.</div>
+        </section>
+
+        <section class="reasons section-wrap" id="reasons" aria-labelledby="reasons-title">
+            <span class="reason-heart-particle reason-heart-one reason-heart-dark" aria-hidden="true">♥</span>
+            <span class="reason-heart-particle reason-heart-two" aria-hidden="true">♥</span>
+            <span class="reason-heart-particle reason-heart-three" aria-hidden="true">♡</span>
+            <span class="reason-heart-particle reason-heart-four" aria-hidden="true">♥</span>
+            <span class="reason-heart-particle reason-heart-five" aria-hidden="true">♡</span>
+            <span class="reason-heart-particle reason-heart-six" aria-hidden="true">♥</span>
+            <span class="reason-heart-particle reason-heart-seven reason-heart-dark" aria-hidden="true">♡</span>
+            <span class="reason-heart-particle reason-heart-eight" aria-hidden="true">♥</span>
+            <div class="section-heading">
+                <p class="eyebrow"><span class="eyebrow-line"></span> A few things I adore</p>
+                <h2 id="reasons-title">Reasons I <em>love you.</em></h2>
+                <p class="section-intro">There are a million, but here are a few. Tap a card to turn it over.</p>
+            </div>
+            <div class="reasons-grid">
+                <button class="reason-card" type="button" aria-pressed="false" aria-label="Your smile. Reveal why I love it.">
+                    <span class="reason-card-inner">
+                        <span class="reason-face reason-front" aria-hidden="false">
+                            <span class="reason-icon" aria-hidden="true">😊</span>
+                            <span class="reason-title">Your smile</span>
+                            <span class="reason-hint" aria-hidden="true">tap to reveal <span>↗</span></span>
+                        </span>
+                        <span class="reason-face reason-back" aria-hidden="true">
+                            <span class="reason-back-heart" aria-hidden="true">♥</span>
+                            <span class="reason-message">It makes even my most ordinary days feel a little brighter.</span>
+                            <span class="reason-back-label">one of my favorite things</span>
+                        </span>
+                    </span>
+                </button>
+                <button class="reason-card" type="button" aria-pressed="false" aria-label="Your care. Reveal why I love it.">
+                    <span class="reason-card-inner">
+                        <span class="reason-face reason-front" aria-hidden="false">
+                            <span class="reason-icon" aria-hidden="true">🫶</span>
+                            <span class="reason-title">Your care</span>
+                            <span class="reason-hint" aria-hidden="true">tap to reveal <span>↗</span></span>
+                        </span>
+                        <span class="reason-face reason-back" aria-hidden="true">
+                            <span class="reason-back-heart" aria-hidden="true">♥</span>
+                            <span class="reason-message">You notice the little things and make the people you love feel safe.</span>
+                            <span class="reason-back-label">one of my favorite things</span>
+                        </span>
+                    </span>
+                </button>
+                <button class="reason-card" type="button" aria-pressed="false" aria-label="Your support. Reveal why I love it.">
+                    <span class="reason-card-inner">
+                        <span class="reason-face reason-front" aria-hidden="false">
+                            <span class="reason-icon" aria-hidden="true">❤️</span>
+                            <span class="reason-title">Your support</span>
+                            <span class="reason-hint" aria-hidden="true">tap to reveal <span>↗</span></span>
+                        </span>
+                        <span class="reason-face reason-back" aria-hidden="true">
+                            <span class="reason-back-heart" aria-hidden="true">♥</span>
+                            <span class="reason-message">You believe in me, stand beside me, and remind me I can do hard things.</span>
+                            <span class="reason-back-label">one of my favorite things</span>
+                        </span>
+                    </span>
+                </button>
+                <button class="reason-card" type="button" aria-pressed="false" aria-label="Your crazy side. Reveal why I love it.">
+                    <span class="reason-card-inner">
+                        <span class="reason-face reason-front" aria-hidden="false">
+                            <span class="reason-icon" aria-hidden="true">😂</span>
+                            <span class="reason-title">Your crazy side</span>
+                            <span class="reason-hint" aria-hidden="true">tap to reveal <span>↗</span></span>
+                        </span>
+                        <span class="reason-face reason-back" aria-hidden="true">
+                            <span class="reason-back-heart" aria-hidden="true">♥</span>
+                            <span class="reason-message">Life with you is never boring, and I wouldn't have it any other way.</span>
+                            <span class="reason-back-label">one of my favorite things</span>
+                        </span>
+                    </span>
+                </button>
+                <button class="reason-card" type="button" aria-pressed="false" aria-label="Your laugh. Reveal why I love it.">
+                    <span class="reason-card-inner">
+                        <span class="reason-face reason-front" aria-hidden="false">
+                            <span class="reason-icon" aria-hidden="true">✨</span>
+                            <span class="reason-title">Your laugh</span>
+                            <span class="reason-hint" aria-hidden="true">tap to reveal <span>↗</span></span>
+                        </span>
+                        <span class="reason-face reason-back" aria-hidden="true">
+                            <span class="reason-back-heart" aria-hidden="true">♥</span>
+                            <span class="reason-message">It is my favorite sound—and I love being the reason for it.</span>
+                            <span class="reason-back-label">one of my favorite things</span>
+                        </span>
+                    </span>
+                </button>
+                <button class="reason-card" type="button" aria-pressed="false" aria-label="The little things you do. Reveal why I love them.">
+                    <span class="reason-card-inner">
+                        <span class="reason-face reason-front" aria-hidden="false">
+                            <span class="reason-icon" aria-hidden="true">💌</span>
+                            <span class="reason-title">The little things</span>
+                            <span class="reason-hint" aria-hidden="true">tap to reveal <span>↗</span></span>
+                        </span>
+                        <span class="reason-face reason-back" aria-hidden="true">
+                            <span class="reason-back-heart" aria-hidden="true">♥</span>
+                            <span class="reason-message">Every kind word, thoughtful check-in, and small moment that says “I'm here.”</span>
+                            <span class="reason-back-label">one of my favorite things</span>
+                        </span>
+                    </span>
+                </button>
+            </div>
+            <p class="reasons-signoff">And a million more reasons, every day. <span aria-hidden="true">♥</span></p>
+        </section>
+
+        <section class="love-note" id="letter" aria-labelledby="letter-title">
+            <div class="love-note-decoration" aria-hidden="true">✳</div>
+            <div class="love-note-content">
+                <p class="eyebrow"><span class="eyebrow-line"></span> Sealed with all my love</p>
+                <h2 id="letter-title">A little something<br><em>just for you.</em></h2>
+                <p>Some things are better said from the heart. I saved you a note.</p>
+                <a class="button button-light" href="letter.html">Open your letter <span aria-hidden="true">♥</span></a>
+            </div>
+            <div class="letter-illustration" aria-hidden="true">
+                <div class="letter-sun"></div>
+                <div class="letter-envelope"><span>♥</span></div>
+                <span class="letter-flower flower-one">✳</span>
+                <span class="letter-flower flower-two">✿</span>
+                <span class="letter-flower flower-three">✦</span>
+            </div>
+        </section>
+
+        <section class="closing section-wrap" aria-label="Anniversary wishes">
+            <span class="closing-heart" aria-hidden="true">♥</span>
+            <p>Here’s to our first year, our next adventure,</p>
+            <h2>and a million more little moments.</h2>
+            <span class="closing-signoff">Happy first anniversary, my love.</span>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <a class="wordmark" href="#home"><span class="wordmark-heart" aria-hidden="true">♥</span> our little story</a>
+        <span>Made with a whole lot of love <span aria-hidden="true">♡</span>Ranjan Rana </span>
+    </footer>
+
+</body>
+</html>
